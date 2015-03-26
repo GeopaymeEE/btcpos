@@ -1,20 +1,20 @@
-# CoinOS
+# btcPOS
 
-CoinOS is a mobile-friendly Point-of-Sale page that merchants can use to accept Bitcoin payments.
+btcPOS is a simple mobile-friendly Point-of-Sale page that merchants can use to accept Bitcoin payments.
 
 # How it Works
 
 * You create an account and configure some basic parameters for your storefront like a name, logo, and bitcoin receiving address
 * You set an exchange rate to be used to convert from your local currency to bitcoin
-* CoinOS creates a custom webpage that you can bring up on a mobile device to generate payment requests
-* You enter a sale amount in your local currency and CoinOS converts it to bitcoin using your chosen exchange rate
-* CoinOS creates a QR code for the payment request with your receiving address and the sale amount encoded
-* CoinOS listens for transactions on the Bitcoin network and displays a notification when the requested amount is received at your address
+* btcPOS creates a custom webpage that you can bring up on a mobile device to generate payment requests
+* You enter a sale amount in your local currency and btcPOS converts it to bitcoin using your chosen exchange rate
+* btcPOS creates a QR code for the payment request with your receiving address and the sale amount encoded
+* btcPOS listens for transactions on the Bitcoin network and displays a notification when the requested amount is received at your address
 * The details of the transaction and the exchange rate used at the time of sale are recorded and made available in a convenient report
 
 # Technical Details
 
-The site is programmed in HTML and Coffeescript using NodeJS and jQuery. Account details and transaction data are stored in a Redis database.  Users are responsible for providing their own receiving addresses managed with whatever wallet they prefer, so CoinOS never stores any bitcoins.
+The site is programmed in HTML and Coffeescript using NodeJS and jQuery. Account details and transaction data are stored in a Redis database.  Users are responsible for providing their own receiving addresses managed with whatever wallet they prefer, so btcPOS never stores any bitcoins.
 
 We use the websocket payment notification API from http://blockchain.info/api/api_websocket to listen for and display payment notifications in real time. The bitcoin exchange rates are fetched from http://bitcoinaverage.com/
 
@@ -36,7 +36,7 @@ Now the app should be runnning at http://localhost:3000/
 
 # License
 
-Copyright (C) 2012 Adam Soltys
+Copyright (C) 2015 Adonis Valamontes
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -51,3 +51,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+#Credit
+
+Original work developed 
