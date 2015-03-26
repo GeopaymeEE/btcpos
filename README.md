@@ -25,9 +25,9 @@ Install nodeJS (http://nodejs.org/) and redis (http://redis.io/).  On Ubuntu, th
     sudo apt-get install nodejs redis-server
     sudo ln -sf /usr/bin/nodejs /usr/bin/node
 
-Download and configure CoinOS:
+Download and configure btcPOS:
 
-    git clone https://github.com/thebitcoincoop/coinos
+    git clone https://github.com/geopaymeEE/btcpos
     cd coinos
     npm install  
     node app.js
