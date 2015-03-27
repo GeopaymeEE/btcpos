@@ -1,8 +1,8 @@
 (function() {
   module.exports.secret = 'weareallmadeofstars';
 
-  module.exports.sendgrid_user = 'geopayme';
+  module.exports.sendgrid_user = 'user';
 
-  module.exports.sendgrid_password = 'A!g30peYm3';
+  module.exports.sendgrid_password = 'password';
 
 }).call(this);
