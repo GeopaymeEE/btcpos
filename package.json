@@ -1,6 +1,6 @@
 {
-  "name": "coinos",
-  "version": "0.0.1",
+  "name": "btcpos",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "start": "node app.js",
